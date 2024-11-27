@@ -11,10 +11,10 @@ python:
   install:
     - requirements: requirements.txt
     - requirements: environment.yml
-  system_packages: true
 
 sphinx:
   configuration: docs/source/conf.py
 
 build:
   image: latest
+  output_base: $READTHEDOCS_OUTPUT/html
