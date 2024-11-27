@@ -1,0 +1,7 @@
+name: computing-in-context
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - jupyter-book=1.*
+  - sphinx>=6.2.0
