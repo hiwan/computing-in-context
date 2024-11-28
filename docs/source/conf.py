@@ -23,10 +23,9 @@ if not os.path.exists('_static'):
 
 # Set the correct output directory for Read the Docs
 if os.getenv('READTHEDOCS') == 'True':
-    html_theme_options = {
-        'base_url': os.getenv('READTHEDOCS_OUTPUT', '_build/html')
-    }
+    html_output = os.path.join(os.getenv('READTHEDOCS_OUTPUT', 'html'))
 else:
-    html_theme_options = {
-        'base_url': '_build/html'
-    }
+    html_output = '_build/html'
+
+# Specify the output directory for Sphinx
+html_output = os.getenv('READTHEDOCS_OUTPUT', html_output)
