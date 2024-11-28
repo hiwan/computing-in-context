@@ -1,24 +1,12 @@
-import os
+title: Computing in Context - Hiroyuki
+author: Hiroyuki
 
-project = 'Your Project Name'
+only_build_toc_files: true
 
-# General configuration
-extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
-    'myst_parser',
-]
+execute:
+  execute_notebooks: "off"
 
-html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
-
-if not os.path.exists('_static'):
-    os.makedirs('_static')
-
-if os.getenv('READTHEDOCS', None) == 'True':
-    html_output = os.getenv('READTHEDOCS_OUTPUT', '_build/html')
-    html_output = os.getenv('READTHEDOCS_OUTPUT')
-else:
-    html_output = '_build/html'
-
-html_output = os.getenv('READTHEDOCS_OUTPUT', '_build/html')
+sphinx:
+  config:
+    # https://myst-parser.readthedocs.io/en/latest/syntax/cross-referencing.html#implicit-targets
+    myst_heading_anchors: 4
