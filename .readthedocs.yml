@@ -11,6 +11,3 @@ sphinx:
 python:
   install:
     - requirements: requirements.txt
-
-commands:
-  - sphinx-build -b html -D language=en -d _build/doctrees . $READTHEDOCS_OUTPUT/html

@@ -5,7 +5,7 @@ import sphinx_rtd_theme
 
 # Project information
 project = 'Your Project Name'
-copyright = '2024, Your Name or Organization'
+copyright = '2024, Your Name'
 author = 'Your Name'
 
 # General configuration
@@ -22,4 +22,3 @@ html_static_path = ['_static']
 # Ensure the _static directory exists
 if not os.path.exists('_static'):
     os.makedirs('_static')
-    
