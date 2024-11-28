@@ -5,6 +5,8 @@ import sphinx_rtd_theme
 
 # Project information
 project = 'Your Project Name'
+copyright = '2024, Your Name or Organization'
+author = 'Your Name'
 
 # General configuration
 extensions = [
@@ -13,19 +15,11 @@ extensions = [
     'myst_parser',
 ]
 
-# HTML output
+# HTML output configuration
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 # Ensure the _static directory exists
 if not os.path.exists('_static'):
     os.makedirs('_static')
-
-# Set the correct output directory for Read the Docs
-if os.getenv('READTHEDOCS') == 'True':
-    html_output = os.path.join(os.getenv('READTHEDOCS_OUTPUT', 'html'))
-else:
-    html_output = '_build/html'
-
-# Specify the output directory for Sphinx
-html_output = os.getenv('READTHEDOCS_OUTPUT', html_output)
+    
