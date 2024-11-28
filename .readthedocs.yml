@@ -7,5 +7,4 @@ build:
 
 sphinx:
   configuration: docs/source/conf.py
-  builder: html
-  output_base: $READTHEDOCS_OUTPUT/html
+
