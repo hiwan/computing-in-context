@@ -1,6 +1,4 @@
-# Table of contents
 format: jb-book
-root: project_3.ipynb
+root: lab_12
 chapters:
-- file: chapter1
-- file: chapter2
+  - file: project_3
