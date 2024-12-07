@@ -34,3 +34,6 @@ suppress_warnings = ['myst.domains']
 use_jupyterbook_latex = True
 use_multitoc_numbering = True
 master_doc = 'index'
+extensions = [
+    'sphinxcontrib.blockdiag',
+]
